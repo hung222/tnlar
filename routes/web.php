@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 Auth::routes();
 
-Route::get('/trangchu', 'trangchuController@index')->name('trangchu');
+Route::get('/home', 'homeController@index')->name('home');
