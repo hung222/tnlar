@@ -16,12 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('welcome', function () {
-    return "hello hello";
-});
-/* routes/web.php */
-use Illuminate\Support\Facades\Route;
+Auth::routes();
 
-Route::get('/', function () {
-    return view('trangchu', ['name' => "nguyentandathy"]);
-})->name('trangchu');
+Route::get('/trangchu', 'trangchuController@index')->name('trangchu');
