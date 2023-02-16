@@ -19,3 +19,9 @@ Route::get('/', function () {
 Route::get('welcome', function () {
     return "hello hello";
 });
+/* routes/web.php */
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('trangchu', ['name' => "nguyentandathy"]);
+})->name('trangchu');
